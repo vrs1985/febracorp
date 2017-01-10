@@ -1,0 +1,33 @@
+.lblAvatar > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.lblAvatar > input + div{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:"";
+}
+.lblAvatar > input:checked + div{ /* (RADIO CHECKED) IMAGE STYLES */
+  border: 5px solid gold; 
+  border-radius: 50%;"
+}
+
+.lblAvatar > input + div > .avatar {
+	max-height: 97px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0%);
+}
+
+.lblAvatar > input:checked + div > .avatar {
+	max-height: 97px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-5%);
+}
+
+.cropper{
+	width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    overflow: hidden;
+}	
